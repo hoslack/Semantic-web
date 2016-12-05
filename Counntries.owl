@@ -1,0 +1,500 @@
+<!-- P15/1579/2015 -->
+
+
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#bordered_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#bordered_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#has_county -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#has_county">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#has_town -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#has_town">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#located_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#located_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#has_population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#has_population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Awendo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Awendo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">93387</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ceel_Balei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ceel_Balei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long"></has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Dagoretti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Dagoretti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">128000</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Djibouti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Djibouti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#El_Barde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#El_Barde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ceel_Balei"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#El_Barde_Capital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#El_Barde_Capital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#El_Barde_Capital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">45876</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ethiopia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ethiopia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Hudur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Hudur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Moro_Idda"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Xudur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Jebel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Jebel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">20198</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kajiado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kajiado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ngong"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rongai"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ethiopia"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#South_Sudan"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tanzania"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Uganda"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kajiado"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kiambu"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kisumu"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Migori"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Nairobi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kiambu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kiambu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kikuyu"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Thika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kikuyu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kikuyu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">233231</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kisumu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kisumu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kisumu_City"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Maseno"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kisumu_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kisumu_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">201258</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Maranga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Maranga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">32098</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Maseno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Maseno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">58000</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Migori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Migori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Awendo"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rongo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Moro_Idda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Moro_Idda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">12198</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Nairobi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Nairobi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Dagoretti"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Nairobi_City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Nairobi_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Nairobi_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3000000</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ngong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ngong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">107188</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rab_Dhure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rab_Dhure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">42400</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rongai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rongai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">40178</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rongo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rongo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">64528</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Sankor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Sankor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">15342</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Djibouti"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Ethiopia"/>
+        <bordered_by rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#El_Barde"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Hudur"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tiyeglow"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Wajid"/>
+        <has_county rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Yeed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#South_Sudan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#South_Sudan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tanzania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tanzania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Thika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Thika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Kenya"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">139853</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tieglo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tieglo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">13259</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tiyeglow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tiyeglow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Sankor"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Tieglo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Uganda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Uganda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Waajid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Waajid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">21987</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Wajid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Wajid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Jebel"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Waajid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Xudur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Xudur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Town"/>
+        <located_in rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Somalia"/>
+        <has_population rdf:datatype="http://www.w3.org/2001/XMLSchema#long">50123</has_population>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Yeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Yeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#County"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Maranga"/>
+        <has_town rdf:resource="http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7#Rab_Dhure"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
