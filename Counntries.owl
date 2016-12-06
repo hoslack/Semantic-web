@@ -1,4 +1,5 @@
-<!-- P15/1579/2015 -->
+<!-- Hoslack Ochieng
+P15/1579/2015 -->
 
 
 <?xml version="1.0"?>
@@ -17,6 +18,24 @@
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
+
+
+    	queries
+    	i)
+
+    	PREFIX table: http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7
+SELECT ?County ?population
+    WHERE { ?County table:population ?population. }
+
+
+       ii)
+
+       PREFIX table: http://www.semanticweb.org/hoslack/ontologies/2016/11/untitled-ontology-7
+       SELECT ?Country ?bordered_by
+    WHERE { ?Country table:borders ?bordered_by FILTER regex(str(?Country), "Kenya")}
+    
+
+
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
